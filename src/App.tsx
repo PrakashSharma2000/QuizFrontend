@@ -105,6 +105,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px", maxWidth: "600px", margin: "auto", fontFamily: "Arial, sans-serif" }}>
+      <p>Hello Folks, please refresh your browser once you add a entry actully i am learing and will fix this issue soon.</p>
       <h2>Add Question</h2>
 
       {error && (
