@@ -16,7 +16,7 @@ function App() {
   // 🔹 Fetch all questions (GET)
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:8080/show")
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/show`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -77,7 +77,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:8080/addQues", {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/addQues`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
